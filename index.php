@@ -14,13 +14,13 @@
 <section class="container">
     <div class="blocos">
         <div class="left">
-            JetSoft <br>Sempre com você!!
+            InoDevs <br>Sempre com você!!
         </div>
     </div>
 
     <div class="blocos">
         <div class="right">
-            <form method="POST" action="bdindex.php">
+            <form method="POST" action="../php/bdindex.php">
                 <label for="">Login</label> <br><input type="text" name="ulogin" placeholder="Digite seu login"  > <br>
                 <label for="">Senha</label> <br><input type="password" name="senha" placeholder="Digite sua senha" > <br>
                 <input id="botao" type="submit" name="acessar" value="Acessar">
@@ -36,7 +36,7 @@
 </section>
 
 <div class="referencia">
-    <h2>Problemas com login? Mande um email para: jetsoft.contact@gmail.com  </h2>
+    <h2>Problemas com login? Mande um email para: inodevs.contact@gmail.com  </h2>
 </div>
 </body>
 </html>
