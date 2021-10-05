@@ -5,6 +5,7 @@
   font-family: Space, Helvetica, sans-serif, Mono, Arial;
   color: #323232;
   border: none;
+  font-size: 20px;
 }
 
 body{
@@ -25,8 +26,8 @@ padding: 0;
   text-align: center;
 }
 .container,h2 {
-  font-size: 1.7em;
-  padding-top: 1.9vh;
+  font-size: 1.6em;
+  padding-top: 1.7vh;
   padding-bottom: 1vh;
 }
 h2{
@@ -39,13 +40,13 @@ h2{
   display: inline-block;
   position: relative;
   width: 96vw;
-  height: 10vh;
+  height: 9vh;
   left: auto;
   background-color: #E5C03B;
   text-align: center;
   padding-left: 2vw;
-  padding-top: 1.25vh;
-  padding-bottom: 1.25%;
+  padding-top: 1.5vh;
+  padding-bottom: 1.25vh;
   margin-left: 2vw;
 }
 
@@ -107,13 +108,13 @@ a:hover{
 }
 
 #botao {
-  margin-top: 12vh;
-  height: 6vh;
+  margin-top: 9vh;
+  height: 8vh;
   text-align: center;
   padding: 0;
-  width: 23vw;
+  width: 24vw;
   border-radius: 50px;
-  font-size: 0.7em;
+  font-size: 0.6em;
   outline: 0px auto;
   outline-offset: 0px;
   border: none;
@@ -132,6 +133,7 @@ a:hover{
 }
 
 .left1 {
+  padding-top: 1.5vh;
   position: absolute;
   width: 59px;
   height: 100vh;
@@ -141,8 +143,8 @@ a:hover{
 }
 
 .barra img{
-  width: 4vw;
-  height: 10vh;
+  width: 5vw;
+  height: 6vh;
 }
 
 @media screen and (max-width: 480px) {
