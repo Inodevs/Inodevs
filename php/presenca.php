@@ -20,7 +20,7 @@
                         <p style='font-size: 20px;'>$nome</p>
                         </div>
                         <div id="deslogar">
-                            <a href="index.php"><input id="botao" class="blue" value="Deslogar"></a>
+                            <a href="../index.php"><input id="botao" class="blue" value="Deslogar"></a>
                         </div>
                         <div class = "caixa">
                             <div id= "meurelogio" class="relogio" onload="Tempo()"></div>
