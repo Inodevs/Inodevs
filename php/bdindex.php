@@ -19,16 +19,16 @@
 					header('location: presenca.php');
 				} else {
 					$_SESSION['msg'] = "<p style='font-size: 18px; color: red'>Login ou senha incorreta!</p>";
-					header('Location: index.php');
+					header('Location:../index.php');
 				}
 			}
 		} else {
 			$_SESSION['msg'] = "<p style='font-size: 18px; color: red'>Preencher login ou senha!</p>";
-			header('Location:index.php');
+			header('Location:../index.php');
 		}
 	} else {
 		$_SESSION['msg'] = "<p style='font-size: 18px; color: red'>Página não encontrada!</p>";
-		header('Location:index.php');
+		header('Location:../index.php');
 	}
 
 ?>
