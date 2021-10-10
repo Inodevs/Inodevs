@@ -39,7 +39,7 @@
 ## :iphone: Versão Mobile
 Acesse o link para visualizar:
 > * [Protótipo interativo no Figma.](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=531%3A3&scaling=min-zoom&page-id=530%3A2&starting-point-node-id=531%3A3)
-<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint2/documenta%C3%A7%C3%A3o/videomobile.gif" width="85%"></h1>
+<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint2/documenta%C3%A7%C3%A3o/videomobile.gif"></h1>
 <br>
 
 ## :game_die: Banco de Dados
