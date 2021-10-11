@@ -43,7 +43,7 @@ Acesse o link para visualizar:
 <br>
 
 ## :game_die: Banco de Dados
-<h1 align="center"><img src = "" width="85%"></h1>
+<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint2/execu%C3%A7%C3%A3o/bd.gif" width="85%"></h1>
 
 <br>
 
