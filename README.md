@@ -1,11 +1,10 @@
 # <p align="center"> Sprint 2 </center>
 
-
 <hr>
 
 <p align="center">
   <a href ="#information_source-informações"> Informações </a>  • 
-  <a href ="#dart-entregas-da-primeira-sprint"> Entregas </a>  • 
+  <a href ="#dart-entregas-da-segunda-sprint"> Entregas </a>  • 
   <a href ="#gear-execução"> Execução </a>  • 
   <a href ="#iphone-versão-mobile">  Versão Mobile </a>  • 
   <a href ="#game_die-banco-de-dados">  Banco de Dados</a>  • 
@@ -44,13 +43,11 @@ Acesse o link para visualizar:
 
 ## :game_die: Banco de Dados
 <h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint2/execu%C3%A7%C3%A3o/bd.gif" width="85%"></h1>
-
 <br>
 
 ## :chart_with_upwards_trend: Burndown
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 <h1 align="center"><img src = "https://cdn.discordapp.com/attachments/826526043917647912/896903635152277524/unknown.png" width="80%"></h1>
-
 <br>
 
 ## :mortar_board: Dev Team
@@ -65,7 +62,6 @@ Acesse o link para visualizar:
 | Júlia Rafaela Teixeira Andrade Silva | Desenvolvedor 4 | [@GitHub](https://github.com/jufaela) | [@LinkedIn](https://www.linkedin.com/in/j%C3%BAlia-andrade-1195a121a) | 
 | Luís Henrique Ferreira Souza | Desenvolvedor 5 | [@GitHub]( https://github.com/Luisttine) | [@LinkedIn](https://www.linkedin.com/in/lu%C3%ADs-souza/) |
 | Maria Eduarda Macedo Braga | Desenvolvedor 6 | [@GitHub](https://github.com/madu-braga) | [@LinkedIn](https://www.linkedin.com/in/maria-eduarda-macedo-braga-4663bb208/) |
-
 
 <h1 align="center"></h1>
 
