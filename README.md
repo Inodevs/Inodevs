@@ -22,7 +22,7 @@
 > [Apresentação](https://github.com/Inodevs/Inodevs/blob/sprint2/documenta%C3%A7%C3%A3o/sprint-2.pdf)<br>
 <br>
 
-## :dart: Entregas da Primeira Sprint
+## :dart: Entregas da Segunda Sprint
 * Lançamento de Presença :heavy_check_mark:
 * Quadro de Presença :heavy_check_mark:
 * Cadastro de contratos :heavy_check_mark:
