@@ -181,7 +181,7 @@ a.links{
 
 @media screen and (max-width: 480px) {     
     .left{
-        height: 100%;
+        height: 137vh;
         width: 43px;
     }
         
@@ -190,8 +190,6 @@ a.links{
         height: 73vh;
         margin-left: 70px;
         margin-top: 0.5vh;
-        background-color: #FFF;
-        border-radius: 10px;
         padding-top: 10px;
         padding-right: 20px;
         padding-left: 35px;
@@ -213,15 +211,15 @@ a.links{
     }
 
     
-input:not([type="checkbox"]){
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 22px;
-}
+    input:not([type="checkbox"]){
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 22px;
+    }
 
-.half-box {
-    flex: 1 1 55%;
-    position: relative;
-}
+    .half-box {
+        flex: 1 1 55%;
+        position: relative;
+    }
 
 }
