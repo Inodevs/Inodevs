@@ -159,8 +159,8 @@ a:hover{
     padding-top: 2.2vh;
   }
   h2{
-      padding-left: 12%;
-      margin-bottom: 1vh;
+    padding-left: 12%;
+    margin-bottom: 1vh;
   }
 
   #left{
@@ -208,4 +208,5 @@ a:hover{
 #perfil:hover{
   color:#ff0000;
   cursor: pointer;
+  position: relative;
 }
