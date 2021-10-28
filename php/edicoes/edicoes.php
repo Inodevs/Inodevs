@@ -29,11 +29,31 @@
         $sql_code_alocacoes= "SELECT * FROM alocacoes";
         $sql_query_alocacoes = $conn->query($sql_code_alocacoes) or die($mysqli->error);
         $linha_alocacoes= $sql_query_alocacoes->fetch_assoc();
+        $nome = $_SESSION['nome'];
+        $nivel_acesso = $_SESSION['nivel_acesso'];
+        $ulogin = $_SESSION['ulogin'];
+        $email = $_SESSION['email'];
+        if($nivel_acesso == 2){
+            $nivel_ac = "Tático";
+        }else{
+            $nivel_ac= "Operacional";
+        }
     ?>
 </head>
 <body>
-    <h1>Edições</h1>
-    <nav class="navabas">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div class="op">
+        <div id="perfil"><?php echo $nome?></div>
+        <div id="info" style = "display:none">
+        Login: <?php echo$ulogin ?><br>
+        Email: <?php echo$email ?><br>
+        Nível de acesso: <?php echo$nivel_ac ?><br>
+        </div><br>
+    </div>
+    <div class="lados">
+        <h1>Edições</h1>
+        <nav class="navabas">
             <ul>
                 <li>
                     <input type="radio" name="aba" class="radio_aba" id="aba1" checked>
@@ -257,6 +277,8 @@
                 </li>
             </ul>
         </nav>
+    </div>
+
         <div class="sidebar">
                     <div class="logo_content">
                         <i class='bx bx1-c-plus-plus'></i>
@@ -306,6 +328,9 @@
             btn.onclick = function() {
                 sidebar.classList.toggle("active");
             }
+            $("div#perfil").click(function(){
+            $("div#info").slideToggle();
+            });
         </script>
         <?php
             unset($_SESSION['checked']);
