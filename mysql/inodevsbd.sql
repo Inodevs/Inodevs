@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 22-Out-2021 às 12:17
+-- Tempo de geração: 26-Out-2021 às 18:17
 -- Versão do servidor: 5.7.31
 -- versão do PHP: 7.3.21
 
@@ -60,17 +60,10 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `endereco` varchar(100) DEFAULT NULL,
   `contato` varchar(100) DEFAULT NULL,
   `clien_cont` int(11) DEFAULT NULL,
-  PRIMARY KEY (`cnpj`),
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`),
   UNIQUE KEY `clien_cont` (`clien_cont`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Extraindo dados da tabela `clientes`
---
-
-INSERT INTO `clientes` (`razao_social`, `nome_fantasia`, `cnpj`, `endereco`, `contato`, `clien_cont`) VALUES
-('Supervisor Geral', 'Havan', '000.987.654/2003-12', 'Rua clonas, 721', '(12)99456-7892', NULL),
-('Supervisor Geral', 'Havan', '94.268.221/0001-99', 'Rua clonas, 721', '(12)98797-9888', NULL);
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -311,7 +304,7 @@ INSERT INTO `usuarios` (`nome`, `ulogin`, `senha`, `email`, `nivel_acesso`) VALU
 ('KauÃ£ Gustavo Rodrigues RenÃ³', 20210002, '$2y$10$Mv1dvyTdFgNjuoi2awdVG.4dma9Hok9zvGVjUcUxkbMRay9xVmQjS', 'kaua@gmail.com', 2),
 ('JÃºlia Rafaela Teixeira Andrade Silva', 20210003, '$2y$10$XShpiaEo9/n0t.2bBCv6I.uO9l/YCK/pg.5EIswGIcjuJJL8GLA3W', 'julia@gmail.com', 1),
 ('Maria Eduarda Macedo Braga', 20210004, '$2y$10$Kfiec0b1R52qTlBJK1N9reJTuf0dQBYQri6i/1FFCNU9dzDJrL24G', 'maria@gmail.com', 1),
-('JÃºlia Maria Santos Barroso', 20210005, '$2y$10$ar5upippANQVeALmUDBA2OoQeIKruZ6a7rS.ZnVJH4vsDEYaqw/5K', 'juliam@gmail.com', 1),
+('JÃºlia Maria Santos Barroso', 20210005, '$2y$10$ar5upippANQVeALmUDBA2OoQeIKruZ6a7rS.ZnVJH4vsDEYaqw/5K', 'juliam@gmail.com', 2),
 ('LuÃ­s Henrique Ferreira Souza', 20210006, '$2y$10$EUibU8bUZpA0dMM/cBnXyOhIUTX5FB5riU7151Z1IwJ/67hfYa/VS', 'luis@gmail.com', 1),
 ('Luiz Fernando Silva Habaeb', 20210007, '$2y$10$MuGdRWza2FsjtcU36lmdgOdhnLDrRNGYbuffLLuzRNVHYT9Js/I5.', 'luiz@gmail.com', 1),
 ('Dante Demetrius Pereira Silva', 20210008, '$2y$10$27pJ3hK2OCTr8xpg6XNpmuaLx4Ms/xQR9tdrZbPPOeXP//p7FO2Yq', 'dante@gmail.com', 1),

@@ -180,7 +180,7 @@ a.links{
 
 @media screen and (max-width: 480px) {     
     .left{
-        height: 100vh;
+        height: 132vh;
         width: 43px;
     }
         
@@ -202,20 +202,19 @@ a.links{
         font-size: 1em;  
     }
 
-    #btn-submit1 {
-        margin-top: 0;
+    #btn-submit {
+        margin-top: 20px;
     }
 
-    
-input:not([type="checkbox"]){
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 22px;
-}
+    input:not([type="checkbox"]){
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 22px;
+    }
 
-.half-box {
-    flex: 1 1 55%;
-    position: relative;
-}
+    .half-box {
+        flex: 1 1 55%;
+        position: relative;
+    }
 
 }

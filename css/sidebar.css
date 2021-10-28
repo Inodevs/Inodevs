@@ -13,7 +13,7 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    width: 70px;
+    width: 60px;
     background: #002339;
     padding: 6px 14px;
     transition: all 0.5s ease;
@@ -30,7 +30,7 @@ body {
     position: absolute;
     color: #fff;
     left: 90%;
-    top: 6px;
+    top: 8px;
     font-size: 20px;
     height: 50px;
     width: 50px;
@@ -105,7 +105,12 @@ body {
 }
 
 #btn {
-    padding-right: 4.9vw;
+    padding-right: 4vw;
+    cursor: pointer;
+}
+
+#btn1 {
+    padding-right: 1vw;
     cursor: pointer;
 }
 
@@ -140,10 +145,8 @@ body {
         top: 0px;
         transform: translateX(-50%);
         border-radius: 6px;
-        height: 35px;
+        height: 20px;
         width: 122px;
-        background: #fff;
-        color: #000;
         line-height: 35px;
         text-align: center;
         transition: 0s;
@@ -190,5 +193,6 @@ body {
     #btn {
         padding-right: 50%;
     }
+    
   }
   
