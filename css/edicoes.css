@@ -88,6 +88,7 @@ td {
     color: blue;
 }
 
+
 .op{
   margin-right: 1vw;
   height: 3vh;
@@ -100,6 +101,7 @@ td {
   color:#ff0000;
   cursor: pointer;
 }
+
 
 @media screen and (max-width: 480px) {
     * {
