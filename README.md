@@ -22,10 +22,12 @@
 <br>
 
 ## :dart: Entregas da Terceira Sprint
-* Segurança do Site
-* Relatórios mensais do quadro de presença
-* Perfis de usuários
-* Edições dos cadastros
+* Interface de parametrização;
+* Perfis do usuário;
+* Relatórios;
+* Segurança;
+* Edições dos cadastros;
+* Validação do produto.
 <br>
 
 ## :gear: Execução
