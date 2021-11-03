@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 26-Out-2021 às 18:17
+-- Tempo de geração: 03-Nov-2021 às 13:24
 -- Versão do servidor: 5.7.31
 -- versão do PHP: 7.3.21
 
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`),
   UNIQUE KEY `clien_cont` (`clien_cont`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -83,25 +83,25 @@ CREATE TABLE IF NOT EXISTS `colaboradores` (
   `tipo_cobertura` enum('Fixo','Flutuante') NOT NULL,
   `posto_trabalho` varchar(50) NOT NULL,
   `usuario_conect` int(10) DEFAULT NULL,
+  `flutuante` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`matricula`),
   UNIQUE KEY `usuario_conect` (`usuario_conect`)
-) ENGINE=InnoDB AUTO_INCREMENT=20210011 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=123123125 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `colaboradores`
 --
 
-INSERT INTO `colaboradores` (`cpf`, `matricula`, `nome_completo`, `data_admissao`, `data_demissao`, `situacao_cadastro`, `funcao`, `tipo_cobertura`, `posto_trabalho`, `usuario_conect`) VALUES
-('111.111.111-11', 20210001, 'Gustavo Kenji Ando', '2021-10-07', '2022-10-07', 'Empregado', 'Auxiliar Administrativo ', 'Flutuante', 'Flutuante', NULL),
-('222.222.222-22', 20210002, 'KauÃ£ Gustavo Rodrigues RenÃ³', '2021-10-06', '2022-10-07', 'Empregado', 'Auxiliar de TI', 'Fixo', 'Setor C', NULL),
-('333.333.333-33', 20210003, 'JÃºlia Rafaela Teixeira Andrade Silva', '2021-10-07', '2022-10-07', 'Em admissao', 'Contadora', 'Fixo', 'Setor B', NULL),
-('444.444.444-44', 20210004, 'Maria Eduarda Macedo Braga', '2021-10-08', '2022-10-08', 'Empregado', 'Recursos Humanos', 'Fixo', 'Setor A', NULL),
-('555.555.555-55', 20210005, 'JÃºlia Maria Santos Barroso', '2021-10-09', '2023-01-07', 'Em admissao', 'Administradora', 'Fixo', 'Setor B', NULL),
-('666.666.666-66', 20210006, 'LuÃ­s Henrique Ferreira Souza', '2021-10-01', '2022-10-01', 'Empregado', 'EstagiÃ¡rio de TI', 'Fixo', 'Setor C', NULL),
-('777.777.777-77', 20210007, 'Luiz Fernando Silva Habaeb', '2021-10-10', '2022-10-10', 'Em admissao', 'Recursos Humanos', 'Fixo', 'Setor A', NULL),
-('888.888.888-88', 20210008, 'Dante Demetrius Pereira Silva', '2021-10-05', '2022-10-05', 'Empregado', 'Administrador', 'Fixo', 'Setor B', NULL),
-('999.999.999-99', 20210009, 'JoÃ£o Vitor da Silva', '2020-12-01', '2021-12-01', 'Empregado', 'EstagiÃ¡rio', 'Fixo', 'Setor A', NULL),
-('101.010.101-01', 20210010, 'Pedro Henrique Alves', '2021-10-18', '2021-10-28', 'Empregado', 'Estagiario', 'Fixo', 'Setor D', NULL);
+INSERT INTO `colaboradores` (`cpf`, `matricula`, `nome_completo`, `data_admissao`, `data_demissao`, `situacao_cadastro`, `funcao`, `tipo_cobertura`, `posto_trabalho`, `usuario_conect`, `flutuante`) VALUES
+('111.111.111-11', 20210001, 'Gustavo Kenji Ando', '2021-10-07', '2022-10-07', 'Empregado', 'Auxiliar Administrativo ', 'Flutuante', 'Flutuante', NULL, NULL),
+('222.222.222-22', 20210002, 'KauÃ£ Gustavo Rodrigues RenÃ³', '2021-10-06', '2022-10-07', 'Empregado', 'Auxiliar de TI', 'Fixo', 'Setor C', NULL, 'Gustavo Kenji Ando'),
+('333.333.333-33', 20210003, 'JÃºlia Rafaela Teixeira Andrade Silva', '2021-10-07', '2022-10-07', 'Em admissao', 'Contadora', 'Fixo', 'Setor B', NULL, NULL),
+('444.444.444-44', 20210004, 'Maria Eduarda Macedo Braga', '2021-10-08', '2022-10-08', 'Empregado', 'Recursos Humanos', 'Fixo', 'Setor A', NULL, NULL),
+('555.555.555-55', 20210005, 'JÃºlia Maria Santos Barroso', '2021-10-09', '2023-01-07', 'Em admissao', 'Administradora', 'Fixo', 'Setor B', NULL, NULL),
+('666.666.666-66', 20210006, 'LuÃ­s Henrique Ferreira Souza', '2021-10-01', '2022-10-01', 'Empregado', 'EstagiÃ¡rio de TI', 'Fixo', 'Setor C', NULL, NULL),
+('777.777.777-77', 20210007, 'Luiz Fernando Silva Habaeb', '2021-10-10', '2022-10-10', 'Em admissao', 'Recursos Humanos', 'Fixo', 'Setor A', NULL, NULL),
+('999.999.999-99', 20210009, 'JoÃ£o Vitor da Silva', '2020-12-01', '2021-12-01', 'Empregado', 'EstagiÃ¡rio', 'Fixo', 'Setor A', NULL, NULL),
+('101.010.101-01', 20210010, 'Pedro Henrique Alves', '2021-10-18', '2021-10-28', 'Empregado', 'Estagiario', 'Fixo', 'Setor D', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -120,6 +120,27 @@ CREATE TABLE IF NOT EXISTS `contratos` (
   PRIMARY KEY (`numero`),
   UNIQUE KEY `cint_colab` (`cint_colab`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `flutuante`
+--
+
+DROP TABLE IF EXISTS `flutuante`;
+CREATE TABLE IF NOT EXISTS `flutuante` (
+  `matricula` int(10) NOT NULL AUTO_INCREMENT,
+  `nome_completo` varchar(50) NOT NULL,
+  `funcao` varchar(50) NOT NULL,
+  PRIMARY KEY (`matricula`)
+) ENGINE=MyISAM AUTO_INCREMENT=20210014 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `flutuante`
+--
+
+INSERT INTO `flutuante` (`matricula`, `nome_completo`, `funcao`) VALUES
+(20210001, 'Gustavo Kenji Ando', 'Auxiliar Administrativo');
 
 -- --------------------------------------------------------
 
@@ -203,7 +224,7 @@ CREATE TABLE IF NOT EXISTS `presenca` (
   UNIQUE KEY `cont_qua` (`cont_qua`),
   UNIQUE KEY `pt_qua` (`pt_qua`),
   KEY `login` (`matricula`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `presenca`
@@ -216,7 +237,6 @@ INSERT INTO `presenca` (`colaborador`, `posto_de_trabalho`, `matricula`, `colab_
 ('JÃºlia Maria Santos Barroso', 'Setor B', NULL, NULL, NULL, NULL, 23, 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 ('LuÃ­s Henrique Ferreira Souza', 'Setor C', NULL, NULL, NULL, NULL, 24, 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 ('Luiz Fernando Silva Habaeb', 'Setor A', NULL, NULL, NULL, NULL, 25, 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-('Dante Demetrius Pereira Silva', 'Setor B', NULL, NULL, NULL, NULL, 26, 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 ('JoÃ£o Vitor da Silva', 'Setor A', NULL, NULL, NULL, NULL, 27, 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 ('Gustavo Kenji Ando', 'Setor C', NULL, NULL, NULL, NULL, 31, 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'P', '', '', '', '', '', '', '', '', '', '', '', ''),
 ('Pedro Henrique Alves', 'Setor D', NULL, NULL, NULL, NULL, 32, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
@@ -272,11 +292,11 @@ CREATE TABLE IF NOT EXISTS `presenca_posto` (
 --
 
 INSERT INTO `presenca_posto` (`id`, `posto_de_trabalho`, `descricao`, `numero_colab`, `d1`, `d2`, `d3`, `d4`, `d5`, `d6`, `d7`, `d8`, `d9`, `d10`, `d11`, `d12`, `d13`, `d14`, `d15`, `d16`, `d17`, `d18`, `d19`, `d20`, `d21`, `d22`, `d23`, `d24`, `d25`, `d26`, `d27`, `d28`, `d29`, `d30`, `d31`) VALUES
-(6, 'Flutuante', 'Em caso de falta de colaborador, o flutuante irÃ¡ substituÃ­-lo.', 100, 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'E', '', '', '', '', '', '', '', '', '', '', '', ''),
-(7, 'Setor A', 'Recursos Humanos.', 3, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(8, 'Setor B', 'LogÃ­stica.', 3, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(9, 'Setor C', 'Service Desk.', 2, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(10, 'Setor D', 'TI', 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+(6, 'Flutuante', 'Em caso de falta de colaborador, o flutuante irÃ¡ substituÃ­-lo.', 100, 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F'),
+(7, 'Setor A', 'Recursos Humanos.', 3, 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F'),
+(8, 'Setor B', 'LogÃ­stica.', 3, 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F'),
+(9, 'Setor C', 'Service Desk.', 2, 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F'),
+(10, 'Setor D', 'TI', 2, 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F');
 
 -- --------------------------------------------------------
 
@@ -307,7 +327,6 @@ INSERT INTO `usuarios` (`nome`, `ulogin`, `senha`, `email`, `nivel_acesso`) VALU
 ('JÃºlia Maria Santos Barroso', 20210005, '$2y$10$ar5upippANQVeALmUDBA2OoQeIKruZ6a7rS.ZnVJH4vsDEYaqw/5K', 'juliam@gmail.com', 2),
 ('LuÃ­s Henrique Ferreira Souza', 20210006, '$2y$10$EUibU8bUZpA0dMM/cBnXyOhIUTX5FB5riU7151Z1IwJ/67hfYa/VS', 'luis@gmail.com', 1),
 ('Luiz Fernando Silva Habaeb', 20210007, '$2y$10$MuGdRWza2FsjtcU36lmdgOdhnLDrRNGYbuffLLuzRNVHYT9Js/I5.', 'luiz@gmail.com', 1),
-('Dante Demetrius Pereira Silva', 20210008, '$2y$10$27pJ3hK2OCTr8xpg6XNpmuaLx4Ms/xQR9tdrZbPPOeXP//p7FO2Yq', 'dante@gmail.com', 1),
 ('JoÃ£o Vitor da Silva', 20210009, '$2y$10$.OHpUdT4aURVaOaUetaOUuxwciYbZ9AfLBgl/KGbKBGY98scBjesG', 'joao@gmail.com', 1),
 ('Pedro Henrique Alves', 20210010, '$2y$10$PzacmqHYYJrUTncH.t/saef.m8L19U/BMVT/MMg6PvDsYi5iXWFxW', 'pedro@gmail.com', 1);
 
