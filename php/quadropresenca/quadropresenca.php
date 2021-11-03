@@ -30,6 +30,66 @@
             // Início do contador para mecânica de clicar e aparecer
             $posto = 1;
             $colaborador = 1;
+            $presencaposto = array();
+            do{
+                $n2 = 1;
+                $dnumero2 = 'd' . $n2;
+                while ($n2<=31){
+                    $sql_query_colaborador = $conn->query($sql_code_colaborador) or die($mysqli->error);
+                    $linha_colaborador = $sql_query_colaborador->fetch_assoc();
+                    $presenca = 0;
+                    do{
+                        if ($linha_posto['posto_de_trabalho'] == $linha_colaborador['posto_de_trabalho']){
+                            if($linha_colaborador[$dnumero2] == 'P'){
+                                $presenca++;
+                            }
+                        }
+                    }while($linha_colaborador = $sql_query_colaborador->fetch_assoc());
+                    if($presenca == $linha_posto['numero_colab']){
+                        $n2++;
+                        $dnumero2 = 'd' . $n2;
+                        $presencaposto[] = 'P';
+                    } 
+                    elseif($presenca < $linha_posto['numero_colab']){
+                        $n2++;
+                        $dnumero2 = 'd' . $n2;
+                        $presencaposto[] = 'F';
+                        
+                    }
+                    elseif ($linha_posto[$dnumero2] == 'P'){
+                        $n2++;
+                        $dnumero2 = 'd' . $n2;
+                        $presencaposto[] = 'P';
+                    } elseif ($linha_posto[$dnumero2] == 'E'){
+                        echo "<td class='blue'>E</td>";
+                        $n2++;
+                        $dnumero2 = 'd' . $n2;
+                        $presencaposto[] = 'E';
+                    } else {
+                        $n2++;
+                        $dnumero2 = 'd' . $n2;
+                        $presencaposto[] = 'F';
+                    }
+                }
+            }while($linha_posto=$sql_query_posto->fetch_assoc());
+        
+            $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
+            $linha_posto = $sql_query_posto->fetch_assoc();
+            $vetor = 0;
+            do {
+                $id_posto = $linha_posto['id'];
+                $dia = 1;
+                while($dia <= 31){
+                    $presencapvet = $presencaposto[$vetor];
+                    $result = "UPDATE presenca_posto SET d$dia = '$presencapvet' WHERE id='$id_posto'";
+                    $resultado = mysqli_query($conn, $result);
+                    $dia++;
+                    $vetor++;
+                }
+            }  while($linha_posto=$sql_query_posto->fetch_assoc());
+        
+            $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
+            $linha_posto = $sql_query_posto->fetch_assoc();
         // Mensagem de sucesso ou falha de alguma ação (editar/deletar)
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];
@@ -100,37 +160,27 @@
                         while ($n2<=date('d')){
                             $sql_query_colaborador = $conn->query($sql_code_colaborador) or die($mysqli->error);
                             $linha_colaborador = $sql_query_colaborador->fetch_assoc();
-                            $presenca = 0;
-                            do{
-                                if ($linha_posto['posto_de_trabalho'] == $linha_colaborador['posto_de_trabalho']){
-                                    if($linha_colaborador[$dnumero2] == 'P'){
-                                        $presenca++;
-                                    }
-                                }
-                            }while($linha_colaborador = $sql_query_colaborador->fetch_assoc());
-                            if($presenca >= $linha_posto['numero_colab']){
+                            if ($linha_posto[$dnumero2] == 'P'){
                                 echo "<td class='green'>P</td>";
                                 $n2++;
                                 $dnumero2 = 'd' . $n2;
-                            }   
-                            elseif ($linha_posto[$dnumero2] == 'P'){
-                                echo "<td class='green'>P</td>";
-                                echo $linha_posto['numero_colab'];
-                                $n2++;
-                                $dnumero2 = 'd' . $n2;
+                                $presencaposto[] = 'P';
                             } elseif ($linha_posto[$dnumero2] == 'E'){
                                 echo "<td class='blue'>E</td>";
                                 $n2++;
                                 $dnumero2 = 'd' . $n2;
+                                $presencaposto[] = 'E';
                             } elseif ($n2 < date('d')) {
                                 echo "<td class='red'>F</td>";
                                 $n2++;
                                 $dnumero2 = 'd' . $n2;
+                                $presencaposto[] = 'F';
                             // Caso for o dia atual, ainda não é adicionado a falta automaticamente
                             } else {
                                 echo "<td></td>";
                                 $n2++;
                                 $dnumero2 = 'd' . $n2;
+                                $presencaposto[] = 'F';
                             }
                         }
                         // Depois do dia atual será adicionado campos vazios
@@ -214,6 +264,8 @@
             } while($linha_posto=$sql_query_posto->fetch_assoc());
             echo <<<EOT
             </table>
+            <a href="relatoriogerencial.php" class="relatorio1">Relatório Gerencial</a><br>
+            <a href="relatorioquadro.php" class="relatorio2">Relatório do Quadro</a>
             <br><br>
             </div>
             </div>
