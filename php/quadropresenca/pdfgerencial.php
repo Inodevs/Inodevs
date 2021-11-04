@@ -56,5 +56,4 @@
         $pdf->render();
         $pdf->stream($file_name, array("Attachment" => false));
     }
-
 ?>
