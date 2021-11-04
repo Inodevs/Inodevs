@@ -152,9 +152,9 @@
                $dnumero3 = 'd' . $n3;
             }
         }
-        $info_posto .= "<h4>" . $linha_posto['posto_de_trabalho'] .  "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>";
-        $info_posto .= "<p>Porcentagem de presença: " . number_format($relatorio_posto_p * 100 / $relatorio_posto_t, 2) . "%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
-        $info_posto .= "<p>Porcentagem de falta: " . number_format($relatorio_posto_f * 100 /$relatorio_posto_t, 2) . "%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
+        $info_posto .= "<h5>" . $linha_posto['posto_de_trabalho'] .  "</h5>";
+        $info_posto .= "<p>Porcentagem de presença: " . number_format($relatorio_posto_p * 100 / $relatorio_posto_t, 2) . "%</p>";
+        $info_posto .= "<p>Porcentagem de falta: " . number_format($relatorio_posto_f * 100 /$relatorio_posto_t, 2) . "%</p>";
     }while($linha_posto=$sql_query_posto->fetch_assoc());
     $info_colaborador = '';
     $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
@@ -190,11 +190,11 @@
                     $dnumero3 = 'd' . $n3;
                 }
             }
-            $info_colaborador .= "<h4>" . $linha_colaborador['colaborador'].  "</h4>";
+            $info_colaborador .= "<h5>" . $linha_colaborador['colaborador'].  "</h5>";
             $info_colaborador .= "<p>Posto de trabalho: " .  $linha_colaborador['posto_de_trabalho'];
-            $info_colaborador .= "<p>Porcentagem de presença: " . number_format($relatorio_colaborador_p * 100 / $relatorio_colaborador_t, 2) . "%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
-            $info_colaborador .= "<p>Porcentagem de falta: " . number_format($relatorio_colaborador_f * 100 /$relatorio_colaborador_t, 2) . "%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
-            $info_colaborador .= "<p>Porcentagem de evento: " . number_format($relatorio_colaborador_e * 100 /$relatorio_colaborador_t, 2) . "%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
+            $info_colaborador .= "<p>Porcentagem de presença: " . number_format($relatorio_colaborador_p * 100 / $relatorio_colaborador_t, 2) . "%</p>";
+            $info_colaborador .= "<p>Porcentagem de falta: " . number_format($relatorio_colaborador_f * 100 /$relatorio_colaborador_t, 2) . "%</p>";
+            $info_colaborador .= "<p>Porcentagem de evento: " . number_format($relatorio_colaborador_e * 100 /$relatorio_colaborador_t, 2) . "%</p>";
     }
     }while($linha_colaborador=$sql_query_colaborador->fetch_assoc());
     }while($linha_posto=$sql_query_posto->fetch_assoc());
@@ -231,34 +231,34 @@
                 </div>
             </div>
         <div id="local1">
-            <h3>Geral</h3>
-            <p>Porcentagem de presença: $numero1%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <p>Porcentagem de faltas: $numero2%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <p>Porcentagem de evento: $numero3%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <h5>Geral</h5>
+            <p>Porcentagem de presença: $numero1%</p>
+            <p>Porcentagem de faltas: $numero2%</p>
+            <p>Porcentagem de evento: $numero3%</p>
         </div>
         <div id="local2">
             <div id="blocoa">
-                <h3>Postos de Trabalho</h3>
-                <p>Porcentagem de presença: $numero4%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                <p>Porcentagem de faltas: $numero5%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <h6>Postos de Trabalho</h6>
+                <p>Porcentagem de presença: $numero4%</p>
+                <p>Porcentagem de faltas: $numero5%</p>
             </div>
             <div id="blocob">
-            <h3>Colaboradores</h3>
-                <p>Porcentagem de presença: $numero6%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                <p>Porcentagem de falta: $numero7%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                <p>Porcentagem de evento: $numero8%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <h5>Colaboradores</h5>
+                <p>Porcentagem de presença: $numero6%</p>
+                <p>Porcentagem de falta: $numero7%</p>
+                <p>Porcentagem de evento: $numero8%</p>
             </div>
         </div>
             <div id="left">
-            <h2>Postos de Trabalho</h2>
+            <h6>Postos de Trabalho</h6>
                 $info_posto
             </div>
             <div id="right">
-            <br><h2>Colaboradores</h2>
+            <h6>Colaboradores</h6>
                 $info_colaborador
             </div>
     </div>
-    <form method="post" id="make_pdf" action="pdf.php" target="_blank">
+    <form method="post" id="make_pdf" action="pdfgerencial.php" target="_blank">
         <input type="hidden" name="hidden_html" id="hidden_html">
         <button type="button" name="create_pdf" id="create_pdf">Gerar PDF</button>
     </form>

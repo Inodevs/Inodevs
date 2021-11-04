@@ -62,7 +62,7 @@
     $tabela_info = '';
     $tabela_toda = '';
     do{
-        $tabela_info .= "<p>" . $linha_posto['posto_de_trabalho'] . "<br>";
+        $tabela_info .= "<h2>" . $linha_posto['posto_de_trabalho'] . "</h2><p>";
         $tabela_toda .= "<tr class='item'>";
         $tabela_toda .= "<td><div class='posto'>" . $linha_posto['posto_de_trabalho'] . "</div></td>";
         $n2 = 1;
@@ -71,7 +71,7 @@
         $relatorio_posto_fgi = 0;
         while ($n2<=$dias){
                     if ($linha_posto[$dnumero2] == 'P'){
-                        $tabela_info .=  "P ";
+                        $tabela_info .=  "<div class='green2'>P </div>";
                         $tabela_toda .=  "<td class='green'>P</td>";
                         $n2++;
                         $relatorio_posto_pg++;
@@ -79,13 +79,13 @@
                         $relatorio_posto_tg++;
                         $dnumero2 = 'd' . $n2;
                     } elseif ($linha_posto[$dnumero2] == 'E'){
-                        $tabela_info .=  "E ";
+                        $tabela_info .=  "<div class='blue2'>E </div>";
                         $tabela_toda .=  "<td class='blue'>E</td>";
                         $n2++;
                         $relatorio_posto_tg++;
                         $dnumero2 = 'd' . $n2;
                     } else{
-                        $tabela_info .=  "F ";
+                        $tabela_info .=  "<div class='red2'>F </div>";
                         $tabela_toda .=  "<td class='red'>F</td>";
                         $n2++;
                         $relatorio_posto_fg++;
@@ -103,8 +103,8 @@
             $linha_colaborador = $sql_query_colaborador->fetch_assoc();           
         do{
             if ($linha_posto['posto_de_trabalho'] == $linha_colaborador['posto_de_trabalho']){
-            $tabela_info .= "<li>" . $linha_colaborador['colaborador'] . "<br>";
-            $tabela_toda .= "<tr><td>&nbsp;&nbsp;&nbsp;" . $linha_colaborador['colaborador'] . "</td>";
+            $tabela_info .= "<li><h3>" . $linha_colaborador['colaborador'] . "</h3>";
+            $tabela_toda .= "<tr><td>" . $linha_colaborador['colaborador'] . "</td>";
                 $n3 = 1;
                 $dnumero3 = 'd' . $n3;
                 $relatorio_colaborador_pgi = 0;
@@ -112,15 +112,15 @@
                 $relatorio_colaborador_fgi = 0;
                 while ($n3<=$dias){
                     if ($linha_colaborador[$dnumero3] == 'P'){
-                        $tabela_info .= "P ";
-                        $tabela_toda .= "<td class='green'>P</td>";
+                        $tabela_info .= "<div class='green2'>P </div>";
+                        $tabela_toda .= "<td class='green'>P </td>";
                         $n3++;
                         $relatorio_colaborador_pg++;
                         $relatorio_colaborador_tg++;
                         $relatorio_colaborador_pgi++;
                         $dnumero3 = 'd' . $n3;
                     } elseif ($linha_colaborador[$dnumero3] == 'E'){
-                        $tabela_info .=  "E ";
+                        $tabela_info .=  "<div class='blue2'>E </div>";
                         $tabela_toda .=  "<td class='blue'>E</td>";
                         $n3++;
                         $relatorio_colaborador_eg++;
@@ -128,8 +128,8 @@
                         $relatorio_colaborador_egi++;
                         $dnumero3 = 'd' . $n3;
                     } else {
-                        $tabela_info .=  "F ";
-                        $tabela_toda .=  "<td class='red'>F</td>";
+                        $tabela_info .=  "<div class='red2'>F </div>";
+                        $tabela_toda .=  "<td class='red'>F </td>";
                         $n3++;
                         $relatorio_colaborador_fg++;
                         $relatorio_colaborador_tg++;
@@ -187,9 +187,9 @@
                $dnumero3 = 'd' . $n3;
             }
         }
-        $info_posto .= "<h4>" . $linha_posto['posto_de_trabalho'] .  "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>";
-        $info_posto .= "<p>Porcentagem de presença: " . number_format($relatorio_posto_p * 100 / $relatorio_posto_t, 2) . "%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
-        $info_posto .= "<p>Porcentagem de falta: " . number_format($relatorio_posto_f * 100 /$relatorio_posto_t, 2) . "%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
+        $info_posto .= "<h4>" . $linha_posto['posto_de_trabalho'] .  "</h4>";
+        $info_posto .= "<p>Porcentagem de presença: " . number_format($relatorio_posto_p * 100 / $relatorio_posto_t, 2) . "%</p>";
+        $info_posto .= "<p>Porcentagem de falta: " . number_format($relatorio_posto_f * 100 /$relatorio_posto_t, 2) . "%</p>";
     }while($linha_posto=$sql_query_posto->fetch_assoc());
     $info_colaborador = '';
     $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
@@ -227,9 +227,9 @@
             }
             $info_colaborador .= "<h4>" . $linha_colaborador['colaborador'].  "</h4>";
             $info_colaborador .= "<p>Posto de trabalho: " .  $linha_colaborador['posto_de_trabalho'];
-            $info_colaborador .= "<p>Porcentagem de presença: " . number_format($relatorio_colaborador_p * 100 / $relatorio_colaborador_t, 2) . "%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
-            $info_colaborador .= "<p>Porcentagem de falta: " . number_format($relatorio_colaborador_f * 100 /$relatorio_colaborador_t, 2) . "%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
-            $info_colaborador .= "<p>Porcentagem de evento: " . number_format($relatorio_colaborador_e * 100 /$relatorio_colaborador_t, 2) . "%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
+            $info_colaborador .= "<p>Porcentagem de presença: " . number_format($relatorio_colaborador_p * 100 / $relatorio_colaborador_t, 2) . "%</p>";
+            $info_colaborador .= "<p>Porcentagem de falta: " . number_format($relatorio_colaborador_f * 100 /$relatorio_colaborador_t, 2) . "%</p>";
+            $info_colaborador .= "<p>Porcentagem de evento: " . number_format($relatorio_colaborador_e * 100 /$relatorio_colaborador_t, 2) . "%</p>";
     }
     }while($linha_colaborador=$sql_query_colaborador->fetch_assoc());
     }while($linha_posto=$sql_query_posto->fetch_assoc());
@@ -242,6 +242,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Relatório de $mes_extenso_atual de $ano</title>
+        <link rel="stylesheet" href="../../css/relatorioquadro.css">
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
@@ -259,14 +260,14 @@
         </tr>
             $tabela_toda
         </tr>
-    </table>
-            $tabela_info
+        </table>
+        $tabela_info
     </div>
-    <form method="post" id="make_pdf" action="pdf.php" target="_blank">
+    <form method="post" id="make_pdf" action="pdfquadro.php" target="_blank">
         <input type="hidden" name="hidden_html" id="hidden_html">
         <button type="button" name="create_pdf" id="create_pdf">Gerar PDF</button>
     </form>
-    <a href="quadropresenca.php">Voltar</a>   
+    <a href="quadropresenca.php" id="btn-submit1">Retornar</a>   
         <script>
         function pdf(){
             var doc = new jsPDF() 

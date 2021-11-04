@@ -89,7 +89,7 @@
                             <span class="tooltip">Edições</span>
                         </li> 
                         <li>
-                            <a href="../sair.php">
+                            <a href="../php/sair.php">
                                 <i class='bx bx-exit' id="btn1"></i>
                                 <span class="links_name">Sair</span>
                             </a>
