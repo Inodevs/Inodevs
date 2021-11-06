@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href ="#information_source-informações"> Informações </a>  • 
-  <a href ="#dart-entregas-da-segunda-sprint"> Entregas </a>  • 
+  <a href ="#dart-entregas-da-terceira-sprint"> Entregas </a>  • 
   <a href ="#gear-execução"> Execução </a>  • 
   <a href ="#iphone-versão-mobile">  Versão Mobile </a>  • 
   <a href ="#game_die-banco-de-dados">  Banco de Dados</a>  • 
