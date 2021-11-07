@@ -31,17 +31,17 @@
 <br>
 
 ## :gear: Execução
-<h1 align="center"><img src = "" width="85%"></h1>
+<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-3/execu%C3%A7%C3%A3o/Execu%C3%A7%C3%A3o.gif" width="100%" height="580px"></h1>
 <br>
 
 ## :iphone: Versão Mobile
 Acesse o link para visualizar:
 > * [Protótipo interativo no Figma.](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=531%3A3&scaling=min-zoom&page-id=530%3A2&starting-point-node-id=531%3A3)
-<h1 align="center"><img src = ""></h1>
+<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-3/execu%C3%A7%C3%A3o/Vers%C3%A3o-Mobile.gif" width="640px" height="932px"></h1>
 <br>
 
 ## :game_die: Banco de Dados
-<h1 align="center"><img src = "" width="85%"></h1>
+<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-3/execu%C3%A7%C3%A3o/Banco-de-Dados.gif" width="100%" height="580px"></h1>
 <br>
 
 ## :chart_with_upwards_trend: Burndown
