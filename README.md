@@ -16,7 +16,7 @@
 ## :dart: Prosposta
 
 O objetivo do nosso grupo é criar um CRUD para uma empresa de software com a proposta de emitir relatórios mensais apresentando um quadro de presença de colaboradores em postos de trabalhos acordados em contrato.
-> [Documentação](https://github.com/Inodevs/Inodevs/blob/sprint2/documenta%C3%A7%C3%A3o/InodevsSprint2.pdf)
+> [Documentação](https://github.com/Inodevs/Inodevs/blob/sprint-3/Documenta%C3%A7%C3%A3o/InodevsSprint3.pdf)
 <br>
 
 ## :pushpin: Requisitos
