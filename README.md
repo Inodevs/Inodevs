@@ -90,6 +90,13 @@ Acesse o link para visualizar:
 | Luís Henrique Ferreira Souza | Desenvolvedor 4 | [@GitHub]( https://github.com/Luisttine) | [@LinkedIn](https://www.linkedin.com/in/lu%C3%ADs-souza/) |
 | Maria Eduarda Macedo Braga | Desenvolvedor 5 | [@GitHub](https://github.com/madu-braga) | [@LinkedIn](https://www.linkedin.com/in/maria-eduarda-macedo-braga-4663bb208/) |
 
+## :grey_question: Guias
+
+Abaixo segue guias para uso do sistema:
+> [Guia de Instalação](https://github.com/Inodevs/Inodevs/blob/main/guiainstala.md)<br>
+> [Guia do Usuário]()
+<br>
+  
 <h1 align="center"></h1>
 
 ##### <p align="center"><img src="https://cdn.discordapp.com/attachments/826526043917647912/883363052425195560/faTec.png" width="20" height="20" /> Projeto Integrador 2021 - Fatec São José dos Campos </center>
