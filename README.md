@@ -90,7 +90,7 @@ Acesse o link para visualizar:
 | Luís Henrique Ferreira Souza | Desenvolvedor 4 | [@GitHub]( https://github.com/Luisttine) | [@LinkedIn](https://www.linkedin.com/in/lu%C3%ADs-souza/) |
 | Maria Eduarda Macedo Braga | Desenvolvedor 5 | [@GitHub](https://github.com/madu-braga) | [@LinkedIn](https://www.linkedin.com/in/maria-eduarda-macedo-braga-4663bb208/) |
 
-## :blue_question: Guias
+## :question: Guias
 
 Abaixo segue guias para uso do sistema:
 > [Guia de Instalação](https://github.com/Inodevs/Inodevs/blob/main/guiainstala.md)<br>
