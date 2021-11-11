@@ -8,7 +8,8 @@
   <a href ="#calendar-plano-de-ação"> Plano de Ação </a>  • 
   <a href ="#computer-wireframe-desktop"> Wireframe</a>  • 
   <a href ="#rocket-tecnologias-utilizadas">  Tecnologias Utilizadas </a>  • 
-  <a href ="#mortar_board-dev-team"> Dev Team </a> 
+  <a href ="#mortar_board-dev-team"> Dev Team </a> • 
+  <a href ="#question-guias"> Guias </a> 
 </p>
 <hr>
 <br>
