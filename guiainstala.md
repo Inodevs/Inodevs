@@ -5,9 +5,8 @@ Este repositório tem como objetivo principal ajudar na instalação de forma ad
 ### Tutoriais disponíveis
    1. Como instalar os programas necessários;
    2. Como clonar o repositório do GitHub;
-   3. Como acessar o php admin e colocar o banco no wamp
-   4. como colocar os arquivos no lugar correto pra abrir o local host
-   5. como acessar a página (pelo wamp, pelo próprio navegador..)
+   3. Como acessar o phpMydmin e importar o banco;
+   4. Como abrir o projeto no Localhost;
 
 <br><br><br>
 
