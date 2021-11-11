@@ -4,15 +4,17 @@ Este repositório tem como objetivo principal ajudar na instalação de forma ad
 
 <hr>
 
-### Passo a Passo 
-   1. Como instalar os programas necessários;
-   2. Como clonar o repositório do GitHub;
-   3. Como acessar o phpMydmin e importar o banco;
-   4. Como abrir o projeto no Localhost.
-  
-<hr>
-<br><br><br>
+## Passo a Passo 
+  <a href ="#instalação"> 1. Como instalar os programas necessários; </a>  <br>
+  <a href ="#instalação" >2. Como clonar o repositório do GitHub; <br>
+  <a href ="#instalação"> 3. Como acessar o phpMydmin e importar o banco; <br>
+  <a href ="#instalação"> 4. Como abrir o projeto no Localhost.
+  <br>
+  <hr>
 
+## Instalação
+
+ <br>
 
 
 ### Veja também:
