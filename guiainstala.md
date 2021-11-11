@@ -2,7 +2,6 @@
 
 Este repositório tem como objetivo principal ajudar na instalação de forma adequada do projeto
 
-<hr>
 
 ## Passo a Passo 
   <a href ="#instalação"> 1. Como instalar os programas necessários; </a>  <br>
@@ -10,7 +9,6 @@ Este repositório tem como objetivo principal ajudar na instalação de forma ad
   <a href ="#instalação"> 3. Como acessar o phpMydmin e importar o banco; <br>
   <a href ="#instalação"> 4. Como abrir o projeto no Localhost.
   <br>
-  <hr>
 
 ## Instalação
 
