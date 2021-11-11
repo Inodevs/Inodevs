@@ -4,7 +4,7 @@ Este repositório tem como objetivo principal ajudar na instalação de forma ad
 
 <hr>
 
-### Tópicos
+### Passo a Passo 
    1. Como instalar os programas necessários;
    2. Como clonar o repositório do GitHub;
    3. Como acessar o phpMydmin e importar o banco;
