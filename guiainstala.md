@@ -26,5 +26,7 @@ Este repositório tem como objetivo principal ajudar na instalação de forma ad
 
  <br>
 
+<h1 align="center"></h1>
+    
 ### Veja também:
 > [Guia do Usuário]()
