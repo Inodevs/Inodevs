@@ -8,7 +8,7 @@
   <a href ="#gear-execução"> Execução </a>  • 
   <a href ="#game_die-banco-de-dados">  Banco de Dados</a>  • 
   <a href ="#chart_with_upwards_trend-burndown">  Burndown </a>  • 
-  <a href ="#mortar_board-dev-team"> Dev Team </a> 
+  <a href ="#mortar_board-dev-team"> Dev Team </a> • 
   <a href ="#question-guias"> Guias </a> 
 </p>
 <hr>
@@ -32,12 +32,6 @@
 
 ## :gear: Execução
 <h1 align="center"><img src = ""></h1>
-<br>
-
-## :iphone: Versão Mobile
-Acesse o link para visualizar:
-> * [Protótipo interativo no Figma.](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=531%3A3&scaling=min-zoom&page-id=530%3A2&starting-point-node-id=531%3A3)
-<h1 align="center"><img src = "" ></h1>
 <br>
 
 ## :game_die: Banco de Dados
