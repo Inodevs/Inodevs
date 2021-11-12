@@ -89,6 +89,13 @@
                             <span class="tooltip">Edições</span>
                         </li> 
                         <li>
+                            <a href="../html/paginodevs.html">
+                                <i class='bx bx-code-alt' id="btn1"></i>
+                                <span class="links_name">Inodevs</span>
+                            </a>
+                            <span class="tooltip">Inodevs</span>
+                        </li>
+                        <li>
                             <a href="../php/sair.php">
                                 <i class='bx bx-exit' id="btn1"></i>
                                 <span class="links_name">Sair</span>

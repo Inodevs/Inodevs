@@ -111,10 +111,10 @@
                                     $linha_contrato_escala=$linha_contrato['escala'];
                             echo <<<EOT
                                     <tr>
-                                        <td>$linha_contrato_numero/td>
+                                        <td>$linha_contrato_numero</td>
                                         <td>$linha_contrato_cliente</td>
                                         <td>$linha_contrato_valor</td>
-                                        <td>$linha_contrato_posto_trabalh</td>
+                                        <td>$linha_contrato_posto_trabalho</td>
                                         <td>$linha_contrato_escala</td>
                                         <td>
                                             <a href="editarcontrato.php?id=$linha_contrato_numero" class="editar">Editar </a> |
@@ -199,6 +199,7 @@
                                         <td class="titulo">CNPJ</td>
                                         <td class="titulo">Endereço</td>
                                         <td class="titulo">Contato</td>
+                                        <td class="titulo">Id</td>
                                         <td class="titulo">Ação</td>
                                     </tr>
                                 EOT;
@@ -349,6 +350,13 @@
                                         </a>
                                         <span class="tooltip">Edições</span>
                                     </li> 
+                                    <li>
+                                        <a href="../../html/paginodevs.html">
+                                            <i class='bx bx-code-alt' id="btn1"></i>
+                                            <span class="links_name">Inodevs</span>
+                                        </a>
+                                        <span class="tooltip">Inodevs</span>
+                                    </li>
                                     <li>
                                         <a href="../sair.php">
                                             <i class='bx bx-exit' id="btn1"></i>

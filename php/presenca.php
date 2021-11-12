@@ -95,19 +95,19 @@
                 }
             echo <<<EOT
             <li>
-                <a href="../php/sair.php">
-                    <i class='bx bx-exit' id="btn1"></i>
-                    <span class="links_name">Sair</span>
-                </a>
-                <span class="tooltip">Sair</span>
-            </li>
-            <li>
                 <a href="../html/paginodevs.html">
-                    <i class='bx bx-code-alt' id"btn1"></i>
+                    <i class='bx bx-code-alt' id="btn1"></i>
                     <span class="links_name">Inodevs</span>
                 </a>
                 <span class="tooltip">Inodevs</span>
             </li>
+            <li>
+            <a href="../php/sair.php">
+                <i class='bx bx-exit' id="btn1"></i>
+                <span class="links_name">Sair</span>
+            </a>
+            <span class="tooltip">Sair</span>
+        </li>
         </ul>
         <script>
         let btn = document.querySelector("#btn");

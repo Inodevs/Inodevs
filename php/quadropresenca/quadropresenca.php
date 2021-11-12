@@ -12,6 +12,8 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Quadro de Presenças</title>
             <link rel="stylesheet" href="../../css/quadro.css">
+            <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+            <link rel="stylesheet" href="../../css/sidebar.css">
         </head>
         <body>
             <!-- jQuery -->
@@ -94,7 +96,6 @@
             unset($_SESSION['msg']);
         }
         echo <<<EOT
-        <div class="voltar3"><a href="../controle.php">Retornar</a></div>
         <div class='principal'>
         <h1>Quadro de Presença</h1>
             <!-- Botão de deletar todas presenças com aviso de confirmação javascript-->
@@ -264,9 +265,58 @@
             </table>
             <a href="relatoriogerencial.php" class="relatorio1">Relatório Gerencial</a><br>
             <a href="relatorioquadro.php" class="relatorio2">Relatório do Quadro</a>
+            <a href="relatorios.php" class="relatorio2">Histórico de Relatórios</a>
             <br><br>
-            <div class="left">
             </div>
+            <div class="sidebar">
+                        <div class="logo_content">
+                            <i class='bx bx1-c-plus-plus'></i>
+                            <i class='bx bx-menu' id="btn"></i>
+                        </div>
+                        <ul class="nav_list">
+                            <li>
+                            <a href="../presenca.php">
+                            <i class='bx bx-check-square' id="btn1"></i>
+                                <span class="links_name">Presenças</span>
+                            </a>
+                            <span class="tooltip">Presenças</span>
+                            </li>
+                            <li>
+                            <a href="../controle.php">
+                            <i class='bx bx-user' id="btn1"></i>
+                                <span class="links_name">Perfis</span>
+                            </a>
+                            <span class="tooltip">Perfis</span>
+                            </li>
+                            <li>
+                                <a href="../quadropresenca/quadropresenca.php">
+                                    <i class='bx bx-clipboard' id="btn1"></i>
+                                    <span class="links_name">Relatório</span>
+                                </a>
+                                <span class="tooltip">Relatório</span>
+                            </li>
+                            <li>
+                                <a href="../edicoes/edicoes.php">
+                                    <i class='bx bx-edit-alt' id="btn1"></i>
+                                    <span class="links_name">Edições</span>
+                                </a>
+                                <span class="tooltip">Edições</span>
+                            </li> 
+                            <li>
+                                <a href="../../html/paginodevs.html">
+                                    <i class='bx bx-code-alt' id="btn1"></i>
+                                    <span class="links_name">Inodevs</span>
+                                </a>
+                                <span class="tooltip">Inodevs</span>
+                            </li>
+                            <li>
+                                <a href="../sair.php">
+                                    <i class='bx bx-exit' id="btn1"></i>
+                                    <span class="links_name">Sair</span>
+                                </a>
+                                <span class="tooltip">Sair</span>
+                            </li>
+                        </ul>
             </div>
             <script>
             EOT;
