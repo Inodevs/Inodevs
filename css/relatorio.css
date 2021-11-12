@@ -154,13 +154,13 @@ h6 {
     background-color: #E5C03B;;
     padding: 8px 5px;
     font-size: 2em;  
-    margin-bottom: 5%;  
+    margin-bottom: 2%;  
     border-radius: 20px;
     cursor: pointer;
     flex: 1 1 50%;
     position: relative;
     width: 20%;
-    margin-top: 75%;
+    margin-top: 60%;
     align-items: center;
     float: right;
     margin-right: -8%;
@@ -193,6 +193,31 @@ h6 {
 
 #btn-submit1:hover {
     background-color: #2c5874;
+}
+
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#salvar{
+    background-color: #E5C03B;;
+    padding: 8px 5px;
+    font-size: 2em;  
+    margin-bottom: 5%;  
+    border-radius: 20px;
+    cursor: pointer;
+    flex: 1 1 50%;
+    position: relative;
+    width: 20%;
+    align-items: center;
+    float: right;
+    margin-right: 41.5%;
+    border: 0 solid;
+}
+#salvar:hover{
+    background: goldenrod;
 }
 
 @media screen and (max-width: 480px) {

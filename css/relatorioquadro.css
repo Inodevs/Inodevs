@@ -136,6 +136,30 @@ ul {
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#salvar{
+    background-color: #E5C03B;;
+    padding: 8px 5px;
+    font-size: 1.25em;  
+    margin-bottom: 2%;  
+    border-radius: 20px;
+    cursor: pointer;
+    flex: 1 1 50%;
+    position: relative;
+    width: 20%;
+    align-items: center;
+    float: right;
+    margin-right: 39.5%;
+    border: 0 solid;
+}
+#salvar:hover{
+    background: goldenrod;
+}
+
 @media screen and (max-width: 480px) {
     *{
         font-size: 12px;
