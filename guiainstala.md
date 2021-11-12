@@ -6,8 +6,8 @@ Este repositório tem como objetivo principal ajudar na instalação de forma ad
 ## Passo a Passo 
   <a href ="#instalação"> 1. Como instalar os programas necessários; </a>  <br>
   <a href ="#clonagem" >2. Como clonar o repositório do GitHub ;</a> <br>
-  <a href ="#importar-banco"> 3. Como acessar o phpMydmin e importar o banco; </a><br>
-  <a href ="#localhost"> 4. Como abrir o projeto no Localhost. </a>
+    <a href ="#localhost"> 3. Como abrir o projeto no Localhost. </a>
+  <a href ="#importar-banco"> 4. Como acessar o phpMydmin e importar o banco; </a><br>
   <br>
 
 ## Instalação
@@ -62,24 +62,46 @@ Para instalá-lo, siga os seguintes passos:
 - Para ter certeza de que deu tudo certo, procure e abra o programa no seu computador. Ele sugira alguns arquivos complementares para serem baixados e completará o _download_;<br>
 
 Se o programa abrir e mostrar a tela inicial, quer dizer que está tudo certo até agora! :tada:
-
-<h1 align="center"></h1>
     
  <br>
     
 ## Clonagem
 
+Clonar é trazer um repositório existente em alguma plataforma como o GitHub para a sua máquina.
+<br>
+Para clonar, siga os seguintes passos:
+- Você deve abrir a página no github do projeto desejado, clicar no botão verde `code` e copiar a linha de https.
+- Após isso, abra o git bash here (clique com o botão direito do mouse na pasta que deseja que tenha o projeto e depois em `git bash here`).
+- No terminal digite o comando git clone e cole o https copiado(No terminal a colagem deve ser feita através do mouse) e de enter, isso clonará o projeto.
+
+Para clonar no github desktop, siga os seguintes passos:
+
+- No menu File, clique em Clone Repository; <br>
+- Clique na aba que corresponde à localização do projeto que você irá clonar ou clique em URL para inserir manualmente o local do repositório, colocando o https; <br>
+- Após escolher o repositório que você quer clonar escolha em `local path` o local em sua maquina que ele deve ser clonado; <br>
+- Clique em `clone`. <br>
+
  <br>
+
+## Localhost
+
+(salvar na pasta wwww)
+ <br> 
+
+<h1 align="center"></h1>
 
 ## Importar Banco
 
- <br>
+Importar o banco é fundamental para rodar corretamente o sistema. Para realizar a importação do banco siga os seguintes passos:
+
+- Confirme que concluiu corretamente as etapas anteriores;
+- Clique com o botão direito do mouse no ícone do Wamp que aparecerá na barra de tarefas; <br>
+- Clique no phpMyAdmin que aparecerá no menu do WampServer. Conforme mostra a imagem abaixo:<br>
+- <img src="https://cdn.discordapp.com/attachments/826526043917647912/908764998224994304/unknown.png" width="30%" /><br>
+
+<br>
     
- ## Localhost
 
- <br>
-
-<h1 align="center"></h1>
     
 ## Veja também:
 > [Guia do Usuário]()
