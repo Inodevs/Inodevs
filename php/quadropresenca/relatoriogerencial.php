@@ -1,6 +1,9 @@
 <?php
     include_once("../conexao.php");
     session_start();
+    $nivel_acesso = $_SESSION['nivel_acesso'];
+    if(!empty($_SESSION['ulogin'])){
+    if($nivel_acesso == 2){
 
     $sql_code_colaborador = "SELECT * FROM presenca";
     $sql_query_colaborador = $conn->query($sql_code_colaborador) or die($mysqli->error);
@@ -68,6 +71,35 @@
             $linha_colaborador = $sql_query_colaborador->fetch_assoc();           
         do{
             if ($linha_posto['posto_de_trabalho'] == $linha_colaborador['posto_de_trabalho']){
+            $tabela_toda .= "<li>" . $linha_colaborador['colaborador'] . "<br>";
+                $n3 = 1;
+                $dnumero3 = 'd' . $n3;
+                while ($n3<=$dias){
+                    if ($linha_colaborador[$dnumero3] == 'P'){
+                        $tabela_toda .= "P ";
+                        $n3++;
+                        $relatorio_colaborador_pg++;
+                        $relatorio_colaborador_tg++;
+                        $dnumero3 = 'd' . $n3;
+                    } elseif ($linha_colaborador[$dnumero3] == 'E'){
+                        $tabela_toda .=  "E ";
+                        $n3++;
+                        $relatorio_colaborador_eg++;
+                        $relatorio_colaborador_tg++;
+                        $dnumero3 = 'd' . $n3;
+                    } else {
+                        $tabela_toda .=  "F ";
+                        $n3++;
+                        $relatorio_colaborador_fg++;
+                        $relatorio_colaborador_tg++;
+                        $dnumero3 = 'd' . $n3;
+                    }
+                }
+            $tabela_toda .= "</li><br>"; 
+            }
+        } while($linha_colaborador=$sql_query_colaborador->fetch_assoc());
+        } while($linha_colaborador=$sql_query_colaborador->fetch_assoc());
+        $tabela_toda .= "</ul>";
                 $n3 = 1;
                 $dnumero3 = "d" . $n3;
                 while ($n3<=$dias){
@@ -106,6 +138,7 @@
     $numero7 = number_format($relatorio_colaborador_fg * 100 /$relatorio_colaborador_tg, 2);
     $numero8 = number_format($relatorio_colaborador_eg * 100 /$relatorio_colaborador_tg, 2);
 
+
     $info_posto = "";
     $sql_query_posto = $conn->query($sql_code_posto) or die($mysqli->error);
     $linha_posto = $sql_query_posto->fetch_assoc();
@@ -115,22 +148,22 @@
         $relatorio_posto_e = 0;
         $relatorio_posto_t = 0;
         $n3 = 1;
-        $dnumero3 = "d" . $n3;
+        $dnumero3 = 'd' . $n3;
         while ($n3<=$dias){
-            if ($linha_posto[$dnumero3] == "P"){
+            if ($linha_posto[$dnumero3] == 'P'){
                $n3++;
                $relatorio_posto_p++;
                $relatorio_posto_t++;
-               $dnumero3 = "d" . $n3;
-            } elseif ($linha_posto[$dnumero3] == "E"){
+               $dnumero3 = 'd' . $n3;
+            } elseif ($linha_posto[$dnumero3] == 'E'){
                $n3++;
                $relatorio_posto_t++;
-               $dnumero3 = "d" . $n3;
+               $dnumero3 = 'd' . $n3;
             } else {
                $n3++;
                $relatorio_posto_f++;
                $relatorio_posto_t++;
-               $dnumero3 = "d" . $n3;
+               $dnumero3 = 'd' . $n3;
             }
         }
         $info_posto .= "<h5>" . $linha_posto['posto_de_trabalho'] .  "</h5>";
@@ -152,23 +185,23 @@
             $relatorio_colaborador_e = 0;
             $relatorio_colaborador_t = 0;
             $n3 = 1;
-            $dnumero3 = "d" . $n3;
+            $dnumero3 = 'd' . $n3;
             while ($n3<=$dias){
-                if ($linha_colaborador[$dnumero3] == "P"){
+                if ($linha_colaborador[$dnumero3] == 'P'){
                     $n3++;
                     $relatorio_colaborador_p++;
                     $relatorio_colaborador_t++;
-                    $dnumero3 = "d" . $n3;
-                } elseif ($linha_colaborador[$dnumero3] == "E"){
+                    $dnumero3 = 'd' . $n3;
+                } elseif ($linha_colaborador[$dnumero3] == 'E'){
                     $n3++;
                     $relatorio_colaborador_e++;
                     $relatorio_colaborador_t++;
-                    $dnumero3 = "d" . $n3;
+                    $dnumero3 = 'd' . $n3;
                 } else {
                     $n3++;
                     $relatorio_colaborador_f++;
                     $relatorio_colaborador_t++;
-                    $dnumero3 = "d" . $n3;
+                    $dnumero3 = 'd' . $n3;
                 }
             }
             $info_colaborador .= "<h5>" . $linha_colaborador['colaborador'].  "</h5>";
@@ -194,7 +227,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     </head>
     <body>
-    <div id="htmlpdf">
+    <div id='htmlpdf'>
             <h1>Relatório Gerencial de $mes_extenso_atual de $ano</h1>
             <h2>Gerais</h2> 
             <h3>Gráficos</h3>
@@ -318,9 +351,17 @@
     </body>
     </html>
     EOT;
-
+    } else {
+        $_SESSION['msg'] = "<br><p style='color: red; font-size: 18px'> Você não tem permissão!</p>";
+        header('location: ../presenca.php');
+    }
+    } else {
+        $_SESSION['msg'] = "<p style='color: red; font-size: 18px'> Você precisa estar logado!</p>";
+        header('location: ../../index.php');
+    }
     echo $conteudo . $voltar . $conteudo2;
 
     $_SESSION['titulo_gerencial'] = "Relatório Gerencial de $mes_extenso_atual de $ano";
     $_SESSION['conteudo_gerencial'] = $conteudo . $conteudo2;
+>>>>>>> sprint-4
 ?>

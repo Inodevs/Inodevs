@@ -1,4 +1,4 @@
-# <p align="center"> Sprint 4 </center>
+# <p align="center"> Sprint 3 </center>
 
 <hr>
 
@@ -16,31 +16,30 @@
 
 ## :information_source: Informações
 
-> [Wireframe]()<br>
-> [Documentação]()<br>
-> [Apresentação]()<br>
+> [Wireframe](https://www.figma.com/proto/tipWpDl8AF1pPSGCAsVdGA/Untitled?node-id=94%3A2&scaling=scale-down-width&page-id=91%3A2&starting-point-node-id=94%3A2)<br>
+> [Documentação](https://github.com/Inodevs/Inodevs/blob/sprint-3/Documenta%C3%A7%C3%A3o/InodevsSprint3.pdf)<br>
+> [Apresentação](https://github.com/Inodevs/Inodevs/blob/sprint-3/Documenta%C3%A7%C3%A3o/sprint-3%20.pdf)<br>
 <br>
-
-## :dart: Entregas da Quarta Sprint
-* 
-* 
-* 
-* 
-* 
-* 
+## :dart: Entregas da Terceira Sprint
+* Interface de parametrização;
+* Perfis do usuário;
+* Relatórios;
+* Segurança;
+* Edições dos cadastros;
+* Validação do produto.
 <br>
 
 ## :gear: Execução
-<h1 align="center"><img src = ""></h1>
+<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-3/execu%C3%A7%C3%A3o/Execu%C3%A7%C3%A3o.gif" width="100%" height="580px"></h1>
 <br>
 
 ## :game_die: Banco de Dados
-<h1 align="center"><img src = "" ></h1>
+<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-3/execu%C3%A7%C3%A3o/Banco-de-Dados.gif" width="100%" height="580px"></h1>
 <br>
 
 ## :chart_with_upwards_trend: Burndown
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
-<h1 align="center"><img src = "" ></h1>
+<h1 align="center"><img src = "https://cdn.discordapp.com/attachments/826526043917647912/906973303808339968/IMG-20211106-WA0032.jpg" width="80%"></h1>
 <br>
 
 ## :mortar_board: Dev Team
