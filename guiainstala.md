@@ -96,12 +96,21 @@ Importar o banco é fundamental para rodar corretamente o sistema. Para realizar
 
 - Confirme que concluiu corretamente as etapas anteriores;
 - Clique com o botão direito do mouse no ícone do Wamp que aparecerá na barra de tarefas; <br>
-- Clique no phpMyAdmin que aparecerá no menu do WampServer. Conforme mostra a imagem abaixo:<br>
-- <img src="https://cdn.discordapp.com/attachments/826526043917647912/908764998224994304/unknown.png" width="30%" /><br>
+- Clique no phpMyAdmin que aparecerá no menu do WampServer. Conforme mostra a imagem abaixo:<br><br>
+ <img src="https://cdn.discordapp.com/attachments/826526043917647912/908764998224994304/unknown.png" width="30%" /><br><br>
+- No phpMyAdmin entre com _root_ no username e deixe a senha em branco. Conforme mostra a imagem abaixo:<br><br>
+ <img src="https://cdn.discordapp.com/attachments/826526043917647912/908766159644528650/unknown.png" width="45%" /><br>
+- Após realizar a etapa anterior clique em _go_, o que abrirá a seguinte tela: <br><br>
+ <img src="https://cdn.discordapp.com/attachments/826526043917647912/908767144056078417/unknown.png" width="87%" /><br>
+- Clique em _New_ e nomeia a Database com o mesmo nome do arquivo que será importado. Nesse caso, "inodevsbd"; <br><br>
+- Lembre-se também de selecionar o "utf8_general_ci" para dessa forma os caracteres e acentos possam ser exibidos. Conforme a imagem abaixo:<br><br>
+ <img src="https://cdn.discordapp.com/attachments/826526043917647912/908768305660166144/unknown.png" width="60%" /><br><br>
+ - Clique em Import. Conforme a imagem abaixo:; <br><br>
+<img src="https://cdn.discordapp.com/attachments/826526043917647912/908769419872829470/unknown.png" width="64%" /><br><br>
+ - Assim, será exibida a seguinte tela: <br><br>
+<img src="https://cdn.discordapp.com/attachments/826526043917647912/908770623885574154/unknown.png" width="84%" /><br><br>
 
-<br>
-    
+Dessa forma, a instalação estará completa e você poderá utilizar o sistema :tada:
 
-    
 ## Veja também:
 > [Guia do Usuário]()
