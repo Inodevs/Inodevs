@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `inodevsbd` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `inodevsbd`;
 -- MySQL dump 10.13  Distrib 5.7.31, for Win64 (x86_64)
 --
 -- Host: localhost    Database: inodevsbd
@@ -325,6 +323,32 @@ INSERT INTO `presenca_posto` VALUES (6,'Flutuante','Em caso de falta de colabora
 UNLOCK TABLES;
 
 --
+-- Table structure for table `relatorios`
+--
+
+DROP TABLE IF EXISTS `relatorios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `relatorios` (
+  `titulo` varchar(70) CHARACTER SET utf8 DEFAULT NULL,
+  `conteudo` longtext CHARACTER SET utf8,
+  `tipo_relatorio` enum('Quadro de Presenca','Gerencial') CHARACTER SET utf8 DEFAULT NULL,
+  `data_relatorio` datetime DEFAULT CURRENT_TIMESTAMP,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `relatorios`
+--
+
+LOCK TABLES `relatorios` WRITE;
+/*!40000 ALTER TABLE `relatorios` DISABLE KEYS */;
+/*!40000 ALTER TABLE `relatorios` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `usuarios`
 --
 
@@ -361,4 +385,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-04  9:16:12
+-- Dump completed on 2021-11-12 14:35:55
