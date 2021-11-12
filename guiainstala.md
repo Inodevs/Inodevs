@@ -4,15 +4,15 @@ Este repositório tem como objetivo principal ajudar na instalação de forma ad
 <br><br>
 
 ## Passo a Passo 
-  <a href ="#instalação"> 1. Como instalar os programas necessários; </a>  <br>
-  <a href ="#clonagem" >2. Como clonar o repositório do GitHub ;</a> <br>
-    <a href ="#localhost"> 3. Como abrir o projeto no Localhost. </a> <br>
-  <a href ="#importar-banco"> 4. Como acessar o phpMydmin e importar o banco; </a><br>
+  <a href ="#instalação"> 1. Como instalar os programas necessários </a>  <br>
+  <a href ="#clonagem" >2. Como clonar o repositório do GitHub </a> <br>
+    <a href ="#localhost"> 3. Como abrir o projeto no Localhost </a> <br>
+  <a href ="#importar-banco"> 4. Como acessar o phpMydmin e importar o banco </a><br>
   <br>
 
 ## Instalação
 
-Abaixo, segue as ferramentas que instalaremos e como realizar o _download_ dos arquivos
+Abaixo, segue as ferramentas que instalaremos e como realizar o _download_ dos arquivos:
 
 ### Github
  O Github é uma plataforma que facilita o trabalho de desenvolvedores, oferecendo diversas funcionalidades extras, aplicadas ao git, proporcionando um ótimo ambiente para trabalho em equipe, servindo gratuitamente de hospedagem de projetos de diversas tecnologias.
@@ -47,8 +47,6 @@ Para instalá-lo, siga os seguintes passos:
 - Se você olhar a barra de tarefas, poderá encontrar o ícone do aplicativo instalado na cor verde. Como pode ser observado na imagem abaixo:<br>
 <img src="https://cdn.discordapp.com/attachments/901303352883822635/908408900024418434/unknown.png" width="30%" /><br>
 
-Se a resposta for parecida com o texto e a imagem acima, quer dizer que está tudo certo até agora! :tada:
-
 <h1 align="center"></h1>
 
 ### Visual Studio Code
@@ -60,8 +58,6 @@ Para instalá-lo, siga os seguintes passos:
 - Identifique qual _download_ contempla seu _sistema operacional_ (Linux, Windows ou Mac), qual sua capacidade de processamento (32bit ou 64bit) e execute a instalação;<br>
 - Execute o programa e siga as instruções do instalador;<br>
 - Para ter certeza de que deu tudo certo, procure e abra o programa no seu computador. Ele sugira alguns arquivos complementares para serem baixados e completará o _download_;<br>
-
-Se o programa abrir e mostrar a tela inicial, quer dizer que está tudo certo até agora! :tada:
     
  <br>
     
@@ -79,16 +75,19 @@ Para clonar no github desktop, siga os seguintes passos:
 - No menu File, clique em Clone Repository; <br>
 - Clique na aba que corresponde à localização do projeto que você irá clonar ou clique em URL para inserir manualmente o local do repositório, colocando o https; <br>
 - Após escolher o repositório que você quer clonar escolha em `local path` o local em sua maquina que ele deve ser clonado; <br>
-- Clique em `clone`. <br>
+- Clique em `clone`. 
 
- <br>
+<br>
 
 ## Localhost
 
-(salvar na pasta wwww)
- <br> 
+Localhost é o termo referente à localização do sistema que está sendo usado, ou seja, onde poderão ser acessados os dados no próprio computador, como se ele fosse um servidor virtual. Saber utilizá-lo é fundamental para a execução do projeto, para isso, siga os seguintes passos:
 
-<h1 align="center"></h1>
+- Após ter clonado o projeto garanta que ele esteja na pasta "www" do Wampserver e que ele esteja funcionando. Caso não esteja salvo nessa pasta, recorte e cole nesse diretório, o que pode ser feito a partir do próprio menu do Wamp, conferme a imagem abaixo: <br><br>
+ <img src="https://cdn.discordapp.com/attachments/826526043917647912/908772506968657980/unknown.png" width="30%" /><br><br>
+- Agora você poderá abrir seu navegador padrão e digitar "Localhost", dessa forma será redirecionado ao nosso site; 
+
+ <br> 
 
 ## Importar Banco
 
