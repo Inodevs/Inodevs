@@ -6,7 +6,7 @@ Este repositório tem como objetivo principal ajudar na instalação de forma ad
 ## Passo a Passo 
   <a href ="#instalação"> 1. Como instalar os programas necessários; </a>  <br>
   <a href ="#clonagem" >2. Como clonar o repositório do GitHub ;</a> <br>
-    <a href ="#localhost"> 3. Como abrir o projeto no Localhost. </a>
+    <a href ="#localhost"> 3. Como abrir o projeto no Localhost. </a> <br>
   <a href ="#importar-banco"> 4. Como acessar o phpMydmin e importar o banco; </a><br>
   <br>
 
