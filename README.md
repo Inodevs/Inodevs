@@ -21,11 +21,11 @@
 > [Apresentação]()<br>
 <br>
 ## :dart: Entregas da Quarta Sprint
-* Plano Contingência
-* Guia de Instalação
-* Guia de Usuário
-* Página de relatorio
-* Validação do produto.
+* Plano Contingência<br>
+* Guia de Instalação<br>
+* Guia de Usuário<br>
+* Página de relatorio<br>
+* Validação do produto.<br>
 <br>
 
 ## :gear: Execução
