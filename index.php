@@ -38,6 +38,9 @@
                 </div>
             </div>
         </section>
+        
+         <a href="./pdf/guiausuario.pdf" class="download"> Download guia de usuário PDF</a>
+         
         <div class="referencia">
             <h2>Problemas com login? Mande um email para: inodevs.contact@gmail.com  </h2>
         </div>
