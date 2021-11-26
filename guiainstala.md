@@ -111,5 +111,4 @@ Importar o banco é fundamental para rodar corretamente o sistema. Para realizar
 
 Dessa forma, a instalação estará completa e você poderá utilizar o sistema :tada:
 
-## Veja também:
-> [Guia do Usuário]()
+
