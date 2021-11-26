@@ -1,4 +1,4 @@
-# Guias de Instalação
+# Guia de Instalação
 
 Este repositório tem como objetivo principal ajudar na instalação de forma adequada do projeto
 <br><br>
