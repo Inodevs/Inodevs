@@ -57,7 +57,7 @@
 
 Abaixo segue guias para uso do sistema:
 > [Guia de Instalação](https://github.com/Inodevs/Inodevs/blob/main/guiainstala.md)<br>
-> [Guia do Usuário]()
+> [Guia do Usuário](https://github.com/Inodevs/Inodevs/blob/sprint-4/pdf/guiausuario.pdf)
 <br>
 
 <h1 align="center"></h1>
