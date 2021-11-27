@@ -306,9 +306,8 @@
         <input type="hidden" name="hidden_html" id="hidden_html">
         <button type="button" name="create_pdf" id="create_pdf">Gerar PDF</button>
     </form>
-    <a href="bdrelatorioquadro.php" type="button" id="salvar">Salvar no Histórico</a>
     EOT;
-    $voltar = '<a href="quadropresenca.php" id="btn-submit1">Retornar</a>'; 
+    $voltar = '<a href="bdrelatorioquadro.php" type="button" id="salvar">Salvar no Histórico</a><a href="quadropresenca.php" id="btn-submit1">Retornar</a>'; 
     $conteudo2 = <<<EOT
         <script>
         $(document).ready(function(){
