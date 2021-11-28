@@ -22,11 +22,11 @@
 <br>
 
 ## :dart: Entregas da Quarta Sprint
-* Plano Contingência :heavy_check_mark: <br>
-* Guia de Instalação :heavy_check_mark:<br>
-* Guia de Usuário :heavy_check_mark:<br>
-* Página de relatorio :heavy_check_mark:<br>
-* Validação do produto.:heavy_check_mark:<br>
+* Plano Contingência; :heavy_check_mark: <br>
+* Guia de Instalação; :heavy_check_mark:<br>
+* Guia de Usuário; :heavy_check_mark:<br>
+* Página de Relatório; :heavy_check_mark:<br>
+* Validação do Produto.:heavy_check_mark:<br>
 <br>
 
 ## :gear: Execução
