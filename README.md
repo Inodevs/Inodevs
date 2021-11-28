@@ -80,7 +80,7 @@ Acesse o link para visualizar:
 * **Ferramentas:** GitHub, VS Code, Canva, Excel e Figma.
 <br>
   
-## :gear: Execução
+## :gear: Execução Final
 <h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/main/Execu%C3%A7%C3%A3o%20Final.gif" width="100%" height="580px"></h1>
 <br>
 
