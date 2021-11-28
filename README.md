@@ -20,7 +20,8 @@
 > [Documentação]()<br>
 > [Apresentação]()<br>
 <br>
-## :dart: Entregas da Quarta Sprint <br>
+
+## :dart: Entregas da Quarta Sprint
 * Plano Contingência :heavy_check_mark: <br>
 * Guia de Instalação :heavy_check_mark:<br>
 * Guia de Usuário :heavy_check_mark:<br>
