@@ -30,7 +30,7 @@
 <br>
 
 ## :gear: Execução
-<h1 align="center"><img src = "" width="100%" height="580px"></h1>
+<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-4/execu%C3%A7%C3%A3o/Execu%C3%A7%C3%A3o%204%C2%AASprint.gif" width="100%" height="580px"></h1>
 <br>
 
 ## :game_die: Banco de Dados
