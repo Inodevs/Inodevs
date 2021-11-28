@@ -34,7 +34,7 @@
 <br>
 
 ## :game_die: Banco de Dados
-<h1 align="center"><img src = "" width="100%" height="580px"></h1>
+<h1 align="center"><img src = "https://github.com/Inodevs/Inodevs/blob/sprint-4/execu%C3%A7%C3%A3o/Banco-de-Dados.gif" width="100%" height="580px"></h1>
 <br>
 
 ## :chart_with_upwards_trend: Burndown
