@@ -9,7 +9,8 @@
   <a href ="#computer-wireframe-desktop"> Wireframe</a>  • 
   <a href ="#rocket-tecnologias-utilizadas">  Tecnologias Utilizadas </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> • 
-  <a href ="#question-guias"> Guias </a> 
+  <a href ="#question-guias"> Guias </a> •
+  <a href ="#interrobang-plano-de-contingência"> Plano de Contingência </a> 
 </p>
 <hr>
 <br>
@@ -95,7 +96,10 @@ Acesse o link para visualizar:
 
 Abaixo segue guias para uso do sistema:
 > [Guia de Instalação](https://github.com/Inodevs/Inodevs/blob/main/guiainstala.md)<br>
-> [Guia do Usuário](https://github.com/Inodevs/Inodevs/blob/sprint-4/pdf/guiausuario.pdf)
+> [Guia do Usuário](https://github.com/Inodevs/Inodevs/blob/sprint-4/pdf/guiausuario.pdf)<br>
+  
+## :interrobang: Plano de Contingência
+> [Plano de Contingência](https://github.com/Inodevs/Inodevs/blob/main/Conten%C3%A7%C3%A3o.pdf)<br>
   
 <h1 align="center"></h1>
 
