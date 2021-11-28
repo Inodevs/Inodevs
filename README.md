@@ -20,13 +20,14 @@
 > [Documentação](https://github.com/Inodevs/Inodevs/blob/sprint-3/Documenta%C3%A7%C3%A3o/InodevsSprint3.pdf)<br>
 > [Apresentação](https://github.com/Inodevs/Inodevs/blob/sprint-3/Documenta%C3%A7%C3%A3o/sprint-3%20.pdf)<br>
 <br>
+
 ## :dart: Entregas da Terceira Sprint
-* Interface de parametrização;
-* Perfis do usuário;
-* Relatórios;
-* Segurança;
-* Edições dos cadastros;
-* Validação do produto.
+* Interface de parametrização;  :heavy_check_mark:
+* Perfis do usuário;  :heavy_check_mark:
+* Relatórios; :heavy_check_mark:
+* Segurança; :heavy_check_mark:
+* Edições dos cadastros; :heavy_check_mark:
+* Validação do produto. :heavy_check_mark:
 <br>
 
 ## :gear: Execução
