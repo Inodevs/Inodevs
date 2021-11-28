@@ -9,7 +9,6 @@
   <a href ="#game_die-banco-de-dados">  Banco de Dados</a>  • 
   <a href ="#chart_with_upwards_trend-burndown">  Burndown </a>  • 
   <a href ="#mortar_board-dev-team"> Dev Team </a> • 
-  <a href ="#question-guias"> Guias </a> 
 </p>
 <hr>
 <br>
@@ -55,12 +54,6 @@
 | Luís Henrique Ferreira Souza | Desenvolvedor 4 | [@GitHub]( https://github.com/Luisttine) | [@LinkedIn](https://www.linkedin.com/in/lu%C3%ADs-souza/) |
 | Maria Eduarda Macedo Braga | Desenvolvedor 5 | [@GitHub](https://github.com/madu-braga) | [@LinkedIn](https://www.linkedin.com/in/maria-eduarda-macedo-braga-4663bb208/) |
 
-## :question: Guias
-
-Abaixo segue guias para uso do sistema:
-> [Guia de Instalação](https://github.com/Inodevs/Inodevs/blob/main/guiainstala.md)<br>
-> [Guia do Usuário]()
-<br>
 
 <h1 align="center"></h1>
 
