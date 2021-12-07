@@ -47,7 +47,7 @@ Acesse a _branch_ referente a entrega da sprint clicando no link:
 - [x] [Sprint 2](https://github.com/Inodevs/Inodevs/tree/sprint-2) - 20/09 a 10/10 - Concluído :heavy_check_mark:
 - [x] [Sprint 3](https://github.com/Inodevs/Inodevs/tree/sprint-3) - 18/10 a 07/11 - Concluído :heavy_check_mark:
 - [x] [Sprint 4](https://github.com/Inodevs/Inodevs/tree/sprint-4) - 08/11 a 28/11 - Concluído :heavy_check_mark:
-- [ ] Apresentação Final - 29/11 a 05/12 - Pendente
+- [ ] Apresentação Final - 29/11 a 05/12 - Concluído :heavy_check_mark:
 - [ ] Feira de Soluções - 16/12 - Pendente
 
 ##### <p align="left"><img src="https://cdn.discordapp.com/attachments/826526043917647912/894935171424481280/unknown.png" width="55%" height="60%"/>
